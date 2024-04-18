@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Enter name";
+}
+
+@model UserModel
+
+<div class="text-center">
+    <h1 class="display-4">Hello</h1>
+    <form asp-controller="Home" method="post" asp-action="Index">
+        <div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" name="Username" aria-describedby="addon-wrapping">
+            <span asp-validation-for="Username" class="my-2 mx-2 text-danger"></span>
+        </div>
+        <div class="my-2">
+            <button type="submit" class="btn btn-success">Send</button>
+        </div>
+    </form>
+</div>
